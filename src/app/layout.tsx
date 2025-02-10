@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "next-themes";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
+const grandslangRoman = localFont({
+  src: "./grandslang-roman.woff2",
+  variable: "--font-grandslang-roman",
+});
 
 export const metadata: Metadata = {
   title: "Phuong Dang | Portfolio",
-  description: "An undergraduate at HCMUTE.",
+  description: "My portfolio 👋",
 };
 
 export default function RootLayout({
@@ -20,23 +24,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="ltr" suppressHydrationWarning>
-      {/* <head></head> */}
-      <body
-        className={`${inter.variable} antialiased`}
-        suppressHydrationWarning
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          themes={["light", "dark"]}
-          // enableSystem
-          // enableColorScheme
-          // disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-      </body>
+    <html
+      lang="en"
+      dir="ltr"
+      suppressHydrationWarning
+      className={`${montserrat.variable} ${grandslangRoman.variable}`}
+      style={{
+        WebkitFontSmoothing: "antialiased",
+        MozOsxFontSmoothing: "grayscale",
+      }}
+    >
+      {children}
     </html>
   );
 }
