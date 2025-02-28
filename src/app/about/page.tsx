@@ -56,7 +56,12 @@ export default function AboutPage() {
                 positive impact on people&apos;s lives.
               </p>
               <br />
-              <Link href={"./resume.pdf"} className="button w-button">
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1jMi20HMqwC49ucpiB0jRLySXEaz8Dmhq/view?usp=sharing"
+                }
+                className="button w-button"
+              >
                 My résumé
               </Link>
             </div>
