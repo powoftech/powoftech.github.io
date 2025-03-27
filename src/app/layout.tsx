@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import {
+  Montserrat,
+  Poppins
+} from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -11,6 +14,13 @@ const montserrat = Montserrat({
 const grandslangRoman = localFont({
   src: "./grandslang-roman.woff2",
   variable: "--font-grandslang-roman",
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -28,13 +38,14 @@ export default function RootLayout({
       lang="en"
       dir="ltr"
       suppressHydrationWarning
-      className={`${montserrat.variable} ${grandslangRoman.variable}`}
+      className={`${montserrat.variable} ${grandslangRoman.variable} ${poppins.variable}`}
       style={{
         WebkitFontSmoothing: "antialiased",
         MozOsxFontSmoothing: "grayscale",
       }}
     >
-      {children}
+      <head suppressHydrationWarning></head>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }

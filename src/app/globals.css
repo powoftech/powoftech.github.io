@@ -2219,8 +2219,8 @@ textarea.w-select {
 }
 
 :root {
-  --charcoal: #1a1818;
-  --offwhite: #ece7e1;
+  --charcoal: #55453f;
+  --offwhite: #f0f0e5;
   --coral: #cf8479;
   --blue: #3e52ae;
   --nude: #f1d5bf;
@@ -2236,7 +2236,7 @@ textarea.w-select {
 body {
   color: #333;
   background-color: #fff;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, Montserrat, sans-serif;
   font-size: 12px;
   line-height: 20px;
 }
@@ -2279,7 +2279,7 @@ h5 {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 50px auto 16px;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, Montserrat, sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
@@ -2296,7 +2296,7 @@ p {
   max-width: 768px;
   letter-spacing: 0.5px;
   margin: 0 auto 14px;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, Montserrat, sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 2em;
@@ -2432,7 +2432,7 @@ blockquote {
 .header.swipe-up {
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, Montserrat, sans-serif;
   font-size: 15px;
   font-weight: 500;
 }
@@ -2450,7 +2450,7 @@ blockquote {
   letter-spacing: 2px;
   border: 0 solid #000;
   margin-bottom: 3%;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, Montserrat, sans-serif;
   font-size: 11px;
   font-weight: 400;
   display: block;
@@ -2479,7 +2479,7 @@ blockquote {
   max-width: 80%;
   margin-left: 0;
   margin-right: 0;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, Montserrat, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 1.9em;
@@ -2646,7 +2646,7 @@ blockquote {
   letter-spacing: 5px;
   text-transform: uppercase;
   border: 0 solid #000;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, Montserrat, sans-serif;
   font-size: 10px;
   font-weight: 500;
   text-decoration: none;
@@ -2882,7 +2882,7 @@ blockquote {
   margin-bottom: 16px;
   padding-top: 24px;
   padding-bottom: 0;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, Montserrat, sans-serif;
   font-size: 14px;
   font-weight: 600;
   display: inline-block;
@@ -2900,7 +2900,7 @@ blockquote {
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, Montserrat, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.9em;
@@ -2911,7 +2911,7 @@ blockquote {
 
 .description-static.description-long {
   max-width: 70%;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, Montserrat, sans-serif;
   font-weight: 400;
   line-height: 1.9em;
 }
@@ -3081,7 +3081,7 @@ blockquote {
 .copyright {
   text-align: center;
   letter-spacing: 4px;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, Montserrat, sans-serif;
   font-size: 10px;
   font-weight: 500;
 }
